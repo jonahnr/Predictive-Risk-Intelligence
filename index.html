@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Data Lab | Customer Health & Predictive Growth Intelligence</title>
+  <meta name="description" content="Customer intelligence system for enterprise account health, churn risk, retention action, and expansion opportunity detection.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Parallax Data Lab home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M32 3 58 17v30L32 61 6 47V17Z" fill="#07182f" stroke="#1d8cff" stroke-width="2"/>
+        <path d="M18 44V29h8v15Zm11 0V20h8v24Zm11 0V13h8v31Z" fill="#1899ff"/>
+        <path d="M12 43c13-4 26-11 40-31" fill="none" stroke="#ffd319" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <strong>PARALLAX</strong>
+        <em>DATA LAB</em>
+      </span>
+    </a>
+    <nav aria-label="Page sections">
+      <a href="#system">System</a>
+      <a href="#models">Models</a>
+      <a href="#actions">Actions</a>
+      <a href="#intelligence">Intel</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-panel">
+      <div class="hero-copy parallax-layer" data-depth="0.12">
+        <p class="eyebrow">Customer Intelligence Exploration</p>
+        <h1>Customer Health & Predictive Growth Intelligence</h1>
+        <p class="hero-lede">Detect deteriorating account health, rising churn risk, service friction, renewal volatility, and expansion readiness before revenue outcomes harden.</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#system">Explore the System</a>
+          <a class="secondary-action" href="#models">View Predictive Models</a>
+        </div>
+      </div>
+
+      <div class="hero-visual parallax-layer" data-depth="-0.08" aria-label="Predictive customer intelligence dashboard preview">
+        <div class="radar-card">
+          <div class="radar-topline">
+            <span>Enterprise Portfolio Pulse</span>
+            <strong>Live Risk Map</strong>
+          </div>
+          <div class="orbital-map">
+            <span class="orbit orbit-one"></span>
+            <span class="orbit orbit-two"></span>
+            <span class="orbit orbit-three"></span>
+            <button class="account-node node-stable" style="--x:18%;--y:34%">Apex<br>91</button>
+            <button class="account-node node-watch" style="--x:67%;--y:22%">Northstar<br>68</button>
+            <button class="account-node node-risk" style="--x:53%;--y:66%">Meridian<br>41</button>
+            <button class="account-node node-growth" style="--x:77%;--y:72%">Atlas<br>86</button>
+            <span class="scan-line"></span>
+          </div>
+          <div class="risk-strip">
+            <div><span></span>Churn exposure <strong>$4.8M</strong></div>
+            <div><span></span>Expansion signal <strong>$2.1M</strong></div>
+            <div><span></span>Interventions due <strong>27</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metric-band" aria-label="Retention intelligence metrics">
+      <article>
+        <strong>36%</strong>
+        <span>Earlier visibility into risk movement</span>
+      </article>
+      <article>
+        <strong>5.4x</strong>
+        <span>More signals than CRM-only health scoring</span>
+      </article>
+      <article>
+        <strong>14d</strong>
+        <span>Average intervention lead-time gained</span>
+      </article>
+      <article>
+        <strong>18%</strong>
+        <span>Expansion-ready accounts surfaced</span>
+      </article>
+    </section>
+
+    <section id="system" class="section-panel system-section">
+      <div class="section-heading">
+        <p class="eyebrow">Signal To Intelligence</p>
+        <h2>Built around the account behaviors that change before the forecast does.</h2>
+        <p>The system blends customer success activity, product telemetry, support pressure, stakeholder engagement, sentiment, renewal indicators, and commercial history into one predictive operating layer.</p>
+      </div>
+      <div class="signal-grid">
+        <article>
+          <span class="icon-pill">01</span>
+          <h3>Engagement Signal Collection</h3>
+          <p>Captures adoption depth, meeting cadence, executive touchpoints, inactive champions, contract milestones, and relationship coverage.</p>
+        </article>
+        <article>
+          <span class="icon-pill">02</span>
+          <h3>Behavior Pattern Detection</h3>
+          <p>Finds usage decay, feature abandonment, ticket clustering, escalation spikes, stalled onboarding, and unexpected buying-committee shifts.</p>
+        </article>
+        <article>
+          <span class="icon-pill">03</span>
+          <h3>Predictive Churn Modeling</h3>
+          <p>Scores account risk with explainable drivers, leading indicators, confidence bands, renewal proximity, and revenue exposure.</p>
+        </article>
+        <article>
+          <span class="icon-pill">04</span>
+          <h3>Intervention Prioritization</h3>
+          <p>Ranks accounts by urgency, saveability, value, owner capacity, recommended play, and expected retention impact.</p>
+        </article>
+        <article>
+          <span class="icon-pill">05</span>
+          <h3>Executive Retention Intelligence</h3>
+          <p>Translates portfolio health into board-ready risk movement, forecast implications, segment patterns, and customer-led revenue strategy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="models" class="model-section">
+      <div class="sticky-copy">
+        <p class="eyebrow">Beyond Churn</p>
+        <h2>A predictive layer for retention, growth, and operating focus.</h2>
+        <p>Churn prevention is the entry point. The larger opportunity is knowing which accounts need action, which accounts are ready for expansion, and which operational patterns are quietly weakening the customer base.</p>
+      </div>
+      <div class="model-stack">
+        <article class="model-card">
+          <span>Risk</span>
+          <h3>Renewal Volatility Prediction</h3>
+          <p>Flags accounts where contract timing, adoption change, unresolved issues, or stakeholder silence create renewal uncertainty.</p>
+          <div class="mini-chart danger"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="model-card">
+          <span>Momentum</span>
+          <h3>Expansion Readiness Modeling</h3>
+          <p>Detects growing teams, high-value feature use, integration depth, support maturity, and buyer engagement that indicate upsell potential.</p>
+          <div class="mini-chart growth"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="model-card">
+          <span>Operations</span>
+          <h3>Support Burden Forecasting</h3>
+          <p>Predicts service strain by correlating ticket themes, escalation velocity, implementation friction, and sentiment deterioration.</p>
+          <div class="mini-chart service"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="model-card">
+          <span>Portfolio</span>
+          <h3>Account Segment Drift</h3>
+          <p>Reveals when a segment, cohort, region, product line, or implementation path starts moving outside expected health ranges.</p>
+          <div class="mini-chart portfolio"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="actions" class="section-panel action-section">
+      <div class="section-heading">
+        <p class="eyebrow">Retention Plays</p>
+        <h2>Move from health score watching to intervention orchestration.</h2>
+      </div>
+      <div class="command-center">
+        <div class="queue-panel">
+          <div class="panel-title">
+            <span>Priority Queue</span>
+            <strong>Next 7 Days</strong>
+          </div>
+          <article>
+            <b>Meridian Manufacturing</b>
+            <span>Usage decay + unresolved escalation</span>
+            <strong>Save play: executive alignment</strong>
+          </article>
+          <article>
+            <b>Northstar Logistics</b>
+            <span>Champion departure + renewal in 42 days</span>
+            <strong>Save play: stakeholder rebuild</strong>
+          </article>
+          <article>
+            <b>Atlas Capital</b>
+            <span>High adoption + new regional teams</span>
+            <strong>Growth play: expansion workshop</strong>
+          </article>
+        </div>
+        <div class="timeline-panel">
+          <div class="panel-title">
+            <span>Recommended Intervention Path</span>
+            <strong>Impact Ranked</strong>
+          </div>
+          <ol>
+            <li><span></span><b>Diagnose driver</b><em>Explain the account movement in human terms.</em></li>
+            <li><span></span><b>Assign play</b><em>Match risk type to proven retention motion.</em></li>
+            <li><span></span><b>Coordinate owners</b><em>Route actions to CS, support, product, and sales.</em></li>
+            <li><span></span><b>Measure lift</b><em>Track risk movement after each intervention.</em></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="intelligence" class="executive-section">
+      <div class="executive-copy">
+        <p class="eyebrow">Executive Retention Intelligence</p>
+        <h2>Portfolio-level clarity for leaders who need to protect and grow revenue.</h2>
+        <p>Parallax Data Lab connects the account-level motion to the executive questions: where revenue is exposed, why health is changing, which teams need support, and which customers are ready for a different conversation.</p>
+      </div>
+      <div class="intelligence-board">
+        <article>
+          <span class="board-label">Revenue At Risk</span>
+          <strong>$12.6M</strong>
+          <div class="progress danger-progress"><span></span></div>
+          <p>Weighted by renewal timing, account value, risk confidence, and intervention likelihood.</p>
+        </article>
+        <article>
+          <span class="board-label">Expansion Surface</span>
+          <strong>$7.3M</strong>
+          <div class="progress growth-progress"><span></span></div>
+          <p>Prioritized from adoption breadth, stakeholder demand, contract fit, and buying signals.</p>
+        </article>
+        <article>
+          <span class="board-label">Friction Hotspots</span>
+          <strong>8</strong>
+          <div class="progress service-progress"><span></span></div>
+          <p>Grouped by onboarding friction, product gaps, support load, and escalation recurrence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div>
+        <p class="eyebrow">Parallax Data Lab</p>
+        <h2>Turn customer behavior into an early-warning and growth navigation system.</h2>
+      </div>
+      <a class="primary-action" href="mailto:hello@parallaxdatalab.com">Start the Exploration</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
