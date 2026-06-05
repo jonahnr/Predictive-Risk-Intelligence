@@ -3,153 +3,278 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Data Lab | Customer Health & Predictive Growth Intelligence</title>
-  <meta name="description" content="Customer intelligence system for enterprise account health, churn risk, retention action, and expansion opportunity detection.">
-  <link rel="stylesheet" href="styles.css">
+  <title>Parallax Data Lab | Intelligence Engine Behind Operational Digests</title>
+  <meta name="description" content="The predictive and directional analytics engine behind operational intelligence digests: signal collection, pattern detection, risk modeling, prioritization, and executive delivery.">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
   <canvas id="signal-canvas" aria-hidden="true"></canvas>
 
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Parallax Data Lab home">
-      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M32 3 58 17v30L32 61 6 47V17Z" fill="#07182f" stroke="#1d8cff" stroke-width="2"/>
-        <path d="M18 44V29h8v15Zm11 0V20h8v24Zm11 0V13h8v31Z" fill="#1899ff"/>
-        <path d="M12 43c13-4 26-11 40-31" fill="none" stroke="#ffd319" stroke-width="4" stroke-linecap="round"/>
-      </svg>
-      <span>
-        <strong>PARALLAX</strong>
-        <em>DATA LAB</em>
-      </span>
+      <a class="brand" href="https://parallax-data.webflow.io/" aria-label="Parallax Data Lab home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 3 58 17v30L32 61 6 47V17Z" fill="#08163a" stroke="#1d8cff" stroke-width="2"/>
+          <path d="M18 44V29h8v15Zm11 0V20h8v24Zm11 0V13h8v31Z" fill="#1d8cff"/>
+          <path d="M12 43c13-4 26-11 40-31" fill="none" stroke="#f6b734" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span>
+          <strong>PARALLAX</strong>
+          <em>DATA LAB</em>
+        </span>
     </a>
-    <nav aria-label="Page sections">
-      <a href="#system">System</a>
-      <a href="#models">Models</a>
-      <a href="#actions">Actions</a>
-      <a href="#intelligence">Intel</a>
+    <nav aria-label="Primary navigation">
+      <a href="https://parallax-data.webflow.io/">Home</a>
+      <a href="https://parallax-data.webflow.io/how-we-help">How We Help</a>
+      <a href="https://parallax-data.webflow.io/intelligence-lab">Intelligence Lab</a>
+      <a href="https://parallax-data.webflow.io/our-offerings">Our Offerings</a>
+      <a href="https://parallax-data.webflow.io/about">About</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero section-panel">
       <div class="hero-copy parallax-layer" data-depth="0.12">
-        <p class="eyebrow">Customer Intelligence Exploration</p>
-        <h1>Customer Health & Predictive Growth Intelligence</h1>
-        <p class="hero-lede">Detect deteriorating account health, rising churn risk, service friction, renewal volatility, and expansion readiness before revenue outcomes harden.</p>
+        <p class="eyebrow">Digest Intelligence Engine</p>
+        <h1>The analytics layer behind leadership attention.</h1>
+        <p class="hero-lede">Operational intelligence digests are the executive-facing output. This engine explains how signals from safety, compliance, quality, service, and field operations become predictive and directional analytics, ranked attention items, and leadership-ready intelligence.</p>
         <div class="hero-actions">
-          <a class="primary-action" href="#system">Explore the System</a>
-          <a class="secondary-action" href="#models">View Predictive Models</a>
+          <a class="primary-action" href="https://jonahnr.github.io/worker-safety-digest/">View the Digest</a>
+          <a class="secondary-action" href="#system">See How It Works</a>
         </div>
       </div>
 
-      <div class="hero-visual parallax-layer" data-depth="-0.08" aria-label="Predictive customer intelligence dashboard preview">
+      <div class="hero-visual parallax-layer" data-depth="-0.08" aria-label="Digest intelligence engine preview">
         <div class="radar-card">
           <div class="radar-topline">
-            <span>Enterprise Portfolio Pulse</span>
-            <strong>Live Risk Map</strong>
+            <span>Digest Signal Engine</span>
+            <strong>Attention Map</strong>
           </div>
           <div class="orbital-map">
             <span class="orbit orbit-one"></span>
             <span class="orbit orbit-two"></span>
             <span class="orbit orbit-three"></span>
-            <button class="account-node node-stable" style="--x:18%;--y:34%">Apex<br>91</button>
-            <button class="account-node node-watch" style="--x:67%;--y:22%">Northstar<br>68</button>
-            <button class="account-node node-risk" style="--x:53%;--y:66%">Meridian<br>41</button>
-            <button class="account-node node-growth" style="--x:77%;--y:72%">Atlas<br>86</button>
+            <span class="account-node node-stable" style="--x:18%;--y:34%">Signal<br>Flow</span>
+            <span class="account-node node-watch" style="--x:67%;--y:22%">Pattern<br>Shift</span>
+            <span class="account-node node-risk" style="--x:53%;--y:66%">Risk<br>Spike</span>
+            <span class="account-node node-growth" style="--x:77%;--y:72%">Action<br>Path</span>
             <span class="scan-line"></span>
           </div>
           <div class="risk-strip">
-            <div><span></span>Churn exposure <strong>$4.8M</strong></div>
-            <div><span></span>Expansion signal <strong>$2.1M</strong></div>
-            <div><span></span>Interventions due <strong>27</strong></div>
+            <div><span></span>Signals collected <strong>Input</strong></div>
+            <div><span></span>Patterns detected <strong>Engine</strong></div>
+            <div><span></span>Digest items ranked <strong>Output</strong></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="metric-band" aria-label="Retention intelligence metrics">
-      <article>
-        <strong>36%</strong>
-        <span>Earlier visibility into risk movement</span>
-      </article>
-      <article>
-        <strong>5.4x</strong>
-        <span>More signals than CRM-only health scoring</span>
-      </article>
-      <article>
-        <strong>14d</strong>
-        <span>Average intervention lead-time gained</span>
-      </article>
-      <article>
-        <strong>18%</strong>
-        <span>Expansion-ready accounts surfaced</span>
-      </article>
+    <section class="metric-band" aria-label="Operational intelligence digest engine flow">
+      <a href="#signal-collection">
+        <strong>01</strong>
+        <span>Operational Signal Collection</span>
+      </a>
+      <a href="#pattern-detection">
+        <strong>02</strong>
+        <span>Pattern Detection Engine</span>
+      </a>
+      <a href="#predictive-modeling">
+        <strong>03</strong>
+        <span>Predictive Risk Modeling</span>
+      </a>
+      <a href="#intervention-prioritization">
+        <strong>04</strong>
+        <span>Intervention Prioritization</span>
+      </a>
+      <a href="#executive-delivery">
+        <strong>05</strong>
+        <span>Executive Intelligence Delivery</span>
+      </a>
     </section>
 
     <section id="system" class="section-panel system-section">
       <div class="section-heading">
-        <p class="eyebrow">Signal To Intelligence</p>
-        <h2>Built around the account behaviors that change before the forecast does.</h2>
-        <p>The system blends customer success activity, product telemetry, support pressure, stakeholder engagement, sentiment, renewal indicators, and commercial history into one predictive operating layer.</p>
+        <p class="eyebrow">How The Digest Is Powered</p>
+        <h2>The engine behind predictive and directional analytics.</h2>
+        <p>The digest does not simply summarize what happened. It turns operational signals from safety, compliance, quality, service, workflow, and field activity into directional risk movement and leadership attention items.</p>
       </div>
-      <div class="signal-grid">
-        <article>
-          <span class="icon-pill">01</span>
-          <h3>Engagement Signal Collection</h3>
-          <p>Captures adoption depth, meeting cadence, executive touchpoints, inactive champions, contract milestones, and relationship coverage.</p>
+      <div class="signal-grid risk-flow">
+        <article id="signal-collection" class="risk-step">
+          <span class="icon-pill">1.</span>
+          <div class="risk-visual visual-collection" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="step-copy">
+            <h3>Operational Signal Collection</h3>
+            <p>Continuously ingest performance and safety signals across workflows, escalations, corrective actions, assignments, inspections, and engagement behavior.</p>
+            <details>
+              <summary>What this can look like</summary>
+              <ul>
+                <li>Daily workflow feeds from operating teams, field systems, service logs, and inspection tools.</li>
+                <li>Structured and open-text inputs normalized into consistent signal categories.</li>
+                <li>Ownership, timing, completion, and escalation context attached to each signal.</li>
+              </ul>
+            </details>
+          </div>
+          <div class="input-block">
+            <b>Sources</b>
+            <ul>
+              <li>Workflow activity</li>
+              <li>Escalation events</li>
+              <li>Assignment data</li>
+              <li>Corrective actions</li>
+              <li>Compliance scores</li>
+              <li>Open text responses</li>
+            </ul>
+          </div>
         </article>
-        <article>
-          <span class="icon-pill">02</span>
-          <h3>Behavior Pattern Detection</h3>
-          <p>Finds usage decay, feature abandonment, ticket clustering, escalation spikes, stalled onboarding, and unexpected buying-committee shifts.</p>
+        <article id="pattern-detection" class="risk-step">
+          <span class="icon-pill">2.</span>
+          <div class="risk-visual visual-pattern" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="step-copy">
+            <h3>Pattern Detection Engine</h3>
+            <p>Identify recurring operational behaviors, emerging risk clusters, abnormal activity patterns, and deviations across sites, divisions, or operational groups.</p>
+            <details>
+              <summary>What this can look like</summary>
+              <ul>
+                <li>Recurring themes grouped across locations, teams, categories, or process paths.</li>
+                <li>Unexpected spikes separated from normal variation and seasonality.</li>
+                <li>Signals connected into emerging patterns that would not be obvious in isolated dashboards.</li>
+              </ul>
+            </details>
+          </div>
+          <div class="input-block">
+            <b>Detection areas</b>
+            <ul>
+              <li>Escalation spikes</li>
+              <li>Recurring hazard themes</li>
+              <li>Declining completion rate</li>
+              <li>Rising overdue actions</li>
+              <li>Negative trend acceleration</li>
+              <li>High-risk system behavior</li>
+            </ul>
+          </div>
         </article>
-        <article>
-          <span class="icon-pill">03</span>
-          <h3>Predictive Churn Modeling</h3>
-          <p>Scores account risk with explainable drivers, leading indicators, confidence bands, renewal proximity, and revenue exposure.</p>
+        <article id="predictive-modeling" class="risk-step">
+          <span class="icon-pill">3.</span>
+          <div class="risk-visual visual-model" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="step-copy">
+            <h3>Predictive Risk Modeling</h3>
+            <p>Forecast operational degradation and identify sites, teams, or operating areas most likely to experience future incidents, compliance failures, or escalating risk conditions.</p>
+            <details>
+              <summary>What this can look like</summary>
+              <ul>
+                <li>Risk scores with the drivers that explain why movement is increasing or decreasing.</li>
+                <li>Directional forecasts that show where risk is likely to worsen before it becomes visible.</li>
+                <li>Confidence indicators so leaders know when to act, watch, or investigate further.</li>
+              </ul>
+            </details>
+          </div>
+          <div class="input-block">
+            <b>Predictive outputs</b>
+            <ul>
+              <li>High-risk site forecasting</li>
+              <li>Failure probability scoring</li>
+              <li>Operational stability index</li>
+              <li>Leading incident indicators</li>
+              <li>Escalation risk projection</li>
+              <li>Risk severity modeling</li>
+            </ul>
+          </div>
         </article>
-        <article>
-          <span class="icon-pill">04</span>
-          <h3>Intervention Prioritization</h3>
-          <p>Ranks accounts by urgency, saveability, value, owner capacity, recommended play, and expected retention impact.</p>
+        <article id="intervention-prioritization" class="risk-step">
+          <span class="icon-pill">4.</span>
+          <div class="risk-visual visual-priority" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="step-copy">
+            <h3>Intervention Prioritization</h3>
+            <p>Rank operational risks and intervention opportunities based on severity, trend acceleration, operational impact, and projected organizational exposure.</p>
+            <details>
+              <summary>What this can look like</summary>
+              <ul>
+                <li>Ranked attention items that balance urgency, severity, exposure, and owner capacity.</li>
+                <li>Recommended intervention paths tied to the detected pattern, not generic action lists.</li>
+                <li>Clear separation between items that require leadership attention and items that can be monitored.</li>
+              </ul>
+            </details>
+          </div>
+          <div class="input-block">
+            <b>Prioritization factors</b>
+            <ul>
+              <li>Severity weighting</li>
+              <li>Exposure risk</li>
+              <li>Historical failure correlation</li>
+              <li>Trend momentum</li>
+              <li>Operational criticality</li>
+              <li>Escalation velocity</li>
+            </ul>
+          </div>
         </article>
-        <article>
-          <span class="icon-pill">05</span>
-          <h3>Executive Retention Intelligence</h3>
-          <p>Translates portfolio health into board-ready risk movement, forecast implications, segment patterns, and customer-led revenue strategy.</p>
+        <article id="executive-delivery" class="risk-step">
+          <span class="icon-pill">5.</span>
+          <div class="risk-visual visual-executive" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="step-copy">
+            <h3>Executive Intelligence Delivery</h3>
+            <p>Deliver predictive operational intelligence through governed dashboards, AI-generated summaries, executive digests, and proactive decision systems.</p>
+            <details>
+              <summary>What this can look like</summary>
+              <ul>
+                <li>Digest-ready summaries that explain what changed, why it matters, and what to do next.</li>
+                <li>Executive views organized around attention, exposure, momentum, and recommended response.</li>
+                <li>Recurring intelligence delivery through dashboards, alerts, digests, copilots, and anomaly detection.</li>
+              </ul>
+            </details>
+          </div>
+          <div class="input-block">
+            <b>Delivery channels</b>
+            <ul>
+              <li>Executive dashboards</li>
+              <li>Predictive risk alerts</li>
+              <li>Operational heatmaps</li>
+              <li>Weekly intelligence digests</li>
+              <li>AI decision copilots</li>
+              <li>Anomaly detection</li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
 
     <section id="models" class="model-section">
       <div class="sticky-copy">
-        <p class="eyebrow">Beyond Churn</p>
-        <h2>A predictive layer for retention, growth, and operating focus.</h2>
-        <p>Churn prevention is the entry point. The larger opportunity is knowing which accounts need action, which accounts are ready for expansion, and which operational patterns are quietly weakening the customer base.</p>
+        <p class="eyebrow">Model Layer</p>
+        <h2>Turn operational movement into digest-ready intelligence.</h2>
+        <p>The digest becomes useful when it explains why an item deserves leadership attention. The model layer clarifies which signals matter, what patterns are emerging, and where leaders should focus before disruption compounds.</p>
       </div>
       <div class="model-stack">
         <article class="model-card">
-          <span>Risk</span>
-          <h3>Renewal Volatility Prediction</h3>
-          <p>Flags accounts where contract timing, adoption change, unresolved issues, or stakeholder silence create renewal uncertainty.</p>
+          <span>Signal</span>
+          <h3>Operational signal architecture</h3>
+          <p>Defines which process, workload, quality, incident, and ownership signals should feed the operational risk model.</p>
           <div class="mini-chart danger"><i></i><i></i><i></i><i></i><i></i></div>
         </article>
         <article class="model-card">
-          <span>Momentum</span>
-          <h3>Expansion Readiness Modeling</h3>
-          <p>Detects growing teams, high-value feature use, integration depth, support maturity, and buyer engagement that indicate upsell potential.</p>
+          <span>Pattern</span>
+          <h3>Pattern detection logic</h3>
+          <p>Identifies recurring risk shapes, leading indicators, and abnormal movement across teams, workflows, and service paths.</p>
           <div class="mini-chart growth"><i></i><i></i><i></i><i></i><i></i></div>
         </article>
         <article class="model-card">
-          <span>Operations</span>
-          <h3>Support Burden Forecasting</h3>
-          <p>Predicts service strain by correlating ticket themes, escalation velocity, implementation friction, and sentiment deterioration.</p>
+          <span>Model</span>
+          <h3>Predictive risk scoring</h3>
+          <p>Scores risk movement with explainable drivers, confidence bands, likely impact, and recommended escalation paths.</p>
           <div class="mini-chart service"><i></i><i></i><i></i><i></i><i></i></div>
         </article>
         <article class="model-card">
-          <span>Portfolio</span>
-          <h3>Account Segment Drift</h3>
-          <p>Reveals when a segment, cohort, region, product line, or implementation path starts moving outside expected health ranges.</p>
+          <span>Executive</span>
+          <h3>Operating risk narrative</h3>
+          <p>Shows when a function, region, product line, customer segment, or process path is moving outside expected risk ranges.</p>
           <div class="mini-chart portfolio"><i></i><i></i><i></i><i></i><i></i></div>
         </article>
       </div>
@@ -157,70 +282,137 @@
 
     <section id="actions" class="section-panel action-section">
       <div class="section-heading">
-        <p class="eyebrow">Retention Plays</p>
-        <h2>Move from health score watching to intervention orchestration.</h2>
+        <p class="eyebrow">Intervention Prioritization</p>
+        <h2>Move from operational risk awareness to leadership attention items.</h2>
+        <p>The intelligence layer is designed to show which risks should rise into the digest, which can be monitored, and where intervention will create the most leverage.</p>
       </div>
       <div class="command-center">
         <div class="queue-panel">
           <div class="panel-title">
-            <span>Priority Queue</span>
-            <strong>Next 7 Days</strong>
+            <span>Digest Queue</span>
+            <strong>Priority Drivers</strong>
           </div>
           <article>
-            <b>Meridian Manufacturing</b>
-            <span>Usage decay + unresolved escalation</span>
-            <strong>Save play: executive alignment</strong>
+            <b>Capacity pressure rising</b>
+            <span>Workload growth + delayed handoffs + shrinking owner availability.</span>
+            <strong>Action: rebalance ownership path</strong>
           </article>
           <article>
-            <b>Northstar Logistics</b>
-            <span>Champion departure + renewal in 42 days</span>
-            <strong>Save play: stakeholder rebuild</strong>
+            <b>Incident recurrence clustering</b>
+            <span>Repeated service failures across a shared workflow, segment, or product path.</span>
+            <strong>Action: isolate root-cause pattern</strong>
           </article>
           <article>
-            <b>Atlas Capital</b>
-            <span>High adoption + new regional teams</span>
-            <strong>Growth play: expansion workshop</strong>
+            <b>Escalation velocity increasing</b>
+            <span>Issue volume, cycle time, and leadership attention are moving in the wrong direction.</span>
+            <strong>Action: trigger intervention review</strong>
           </article>
         </div>
         <div class="timeline-panel">
           <div class="panel-title">
-            <span>Recommended Intervention Path</span>
+            <span>Intervention Path</span>
             <strong>Impact Ranked</strong>
           </div>
           <ol>
-            <li><span></span><b>Diagnose driver</b><em>Explain the account movement in human terms.</em></li>
-            <li><span></span><b>Assign play</b><em>Match risk type to proven retention motion.</em></li>
-            <li><span></span><b>Coordinate owners</b><em>Route actions to CS, support, product, and sales.</em></li>
-            <li><span></span><b>Measure lift</b><em>Track risk movement after each intervention.</em></li>
+            <li><span></span><b>Collect signals</b><em>Bring operational data into one coherent risk lens.</em></li>
+            <li><span></span><b>Detect patterns</b><em>Separate meaningful risk movement from ordinary operating noise.</em></li>
+            <li><span></span><b>Model risk</b><em>Estimate likely impact, confidence, and intervention urgency.</em></li>
+            <li><span></span><b>Prioritize response</b><em>Route action to the right owner with executive visibility.</em></li>
           </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="deliverables" class="section-panel deliverables-section conversion-section">
+      <div class="deliverables-copy">
+        <p class="eyebrow">Digest Output</p>
+        <h2>How raw operational data becomes the digest leaders read.</h2>
+        <p>This page explains the intelligence system behind operational leadership digests, including the linked digest example. The digest is the leadership artifact; the engine below is how signals are converted into predictive, directional, and action-oriented attention items.</p>
+        <div class="deliverables-grid">
+          <article>
+            <span class="deliverable-label">01</span>
+            <h3>Signal-to-digest map</h3>
+            <p>A structured view of which workflow, capacity, quality, service, and ownership signals feed digest attention items.</p>
+          </article>
+          <article>
+            <span class="deliverable-label">02</span>
+            <h3>Pattern and driver logic</h3>
+            <p>A clear explanation of the risk patterns, model inputs, and directional drivers behind each surfaced item.</p>
+          </article>
+          <article>
+            <span class="deliverable-label">03</span>
+            <h3>Leadership attention rationale</h3>
+            <p>A prioritized rationale for why an item belongs in the digest and what action path leaders should consider.</p>
+          </article>
+        </div>
+        <a class="primary-action" href="https://jonahnr.github.io/worker-safety-digest/">View the Digest</a>
+      </div>
+      <div class="request-card output-preview" aria-label="Sample digest logic preview">
+        <div class="panel-title">
+          <span>Sample Output</span>
+          <strong>Digest Logic Preview</strong>
+        </div>
+        <div class="output-document">
+          <div class="document-topline">
+            <span>Operational Intelligence Digest</span>
+            <strong>Attention Item Logic</strong>
+          </div>
+          <div class="output-summary">
+            <article>
+              <span>Risk Movement</span>
+              <strong>Rising</strong>
+            </article>
+            <article>
+              <span>Intervention Need</span>
+              <strong>High</strong>
+            </article>
+            <article>
+              <span>Roadmap Priority</span>
+              <strong>Digest Item</strong>
+            </article>
+          </div>
+          <div class="output-section">
+            <b>Signal-to-digest map</b>
+            <div class="signal-row"><span>Capacity pressure</span><i class="bar warn"></i><em>Owner load rising</em></div>
+            <div class="signal-row"><span>Incident recurrence</span><i class="bar risk"></i><em>Pattern clustering</em></div>
+            <div class="signal-row"><span>Process stability</span><i class="bar stable"></i><em>Baseline available</em></div>
+          </div>
+          <div class="output-section roadmap-preview">
+            <b>Recommended next moves</b>
+            <ol>
+              <li>Surface high-confidence risk movement in the digest</li>
+              <li>Attach pattern drivers to the leadership item</li>
+              <li>Rank the recommended intervention path</li>
+            </ol>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="intelligence" class="executive-section">
       <div class="executive-copy">
-        <p class="eyebrow">Executive Retention Intelligence</p>
-        <h2>Portfolio-level clarity for leaders who need to protect and grow revenue.</h2>
-        <p>Parallax Data Lab connects the account-level motion to the executive questions: where revenue is exposed, why health is changing, which teams need support, and which customers are ready for a different conversation.</p>
+        <p class="eyebrow">Executive Intelligence Delivery</p>
+        <h2>Why the digest gives leaders direction, not just reporting.</h2>
+        <p>Parallax Data Lab connects operational risk movement to the leadership questions that matter: where exposure is increasing, why patterns are changing, which teams need support, and which interventions should happen next.</p>
       </div>
       <div class="intelligence-board">
         <article>
-          <span class="board-label">Revenue At Risk</span>
-          <strong>$12.6M</strong>
+          <span class="board-label">Risk Visibility</span>
+          <strong>Mapped</strong>
           <div class="progress danger-progress"><span></span></div>
-          <p>Weighted by renewal timing, account value, risk confidence, and intervention likelihood.</p>
+          <p>Clarified by signal movement, exposure, model confidence, and intervention readiness.</p>
         </article>
         <article>
-          <span class="board-label">Expansion Surface</span>
-          <strong>$7.3M</strong>
+          <span class="board-label">Pattern Movement</span>
+          <strong>Detected</strong>
           <div class="progress growth-progress"><span></span></div>
-          <p>Prioritized from adoption breadth, stakeholder demand, contract fit, and buying signals.</p>
+          <p>Grounded in recurring incidents, workflow pressure, quality shifts, and operating drift.</p>
         </article>
         <article>
-          <span class="board-label">Friction Hotspots</span>
-          <strong>8</strong>
+          <span class="board-label">Intervention Path</span>
+          <strong>Ranked</strong>
           <div class="progress service-progress"><span></span></div>
-          <p>Grouped by onboarding friction, product gaps, support load, and escalation recurrence.</p>
+          <p>Prioritized by urgency, business impact, owner capacity, and response leverage.</p>
         </article>
       </div>
     </section>
@@ -228,9 +420,9 @@
     <section class="closing-section">
       <div>
         <p class="eyebrow">Parallax Data Lab</p>
-        <h2>Turn customer behavior into an early-warning and growth navigation system.</h2>
+        <h2>See the digest powered by predictive and directional analytics.</h2>
       </div>
-      <a class="primary-action" href="mailto:hello@parallaxdatalab.com">Start the Exploration</a>
+      <a class="primary-action" href="https://jonahnr.github.io/worker-safety-digest/">View the Digest</a>
     </section>
   </main>
 
