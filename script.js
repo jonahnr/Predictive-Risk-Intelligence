@@ -4,12 +4,14 @@ const canvas = document.querySelector("#signal-canvas");
 const ctx = canvas.getContext("2d");
 const layers = Array.from(document.querySelectorAll(".parallax-layer"));
 const cards = Array.from(document.querySelectorAll(".model-card, .signal-grid article, .intelligence-board article"));
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 let width = 0;
 let height = 0;
 let signals = [];
 let pointerX = 0.5;
 let pointerY = 0.5;
+let animationFrame = null;
 
 function resizeCanvas() {
   const ratio = Math.min(window.devicePixelRatio || 1, 2);
@@ -33,6 +35,10 @@ function resizeCanvas() {
 }
 
 function drawSignals() {
+  if (reduceMotion.matches) {
+    return;
+  }
+
   ctx.clearRect(0, 0, width, height);
 
   signals.forEach((signal, index) => {
@@ -67,14 +73,20 @@ function drawSignals() {
     }
   });
 
-  requestAnimationFrame(drawSignals);
+  animationFrame = requestAnimationFrame(drawSignals);
 }
 
 function updateParallax() {
-  const scrollY = window.scrollY;
+  if (reduceMotion.matches) {
+    layers.forEach((layer) => {
+      layer.style.transform = "";
+    });
+    return;
+  }
+
   layers.forEach((layer) => {
     const depth = Number(layer.dataset.depth || 0);
-    layer.style.transform = `translate3d(${(pointerX - 0.5) * depth * -42}px, ${scrollY * depth}px, 0)`;
+    layer.style.transform = `translate3d(${(pointerX - 0.5) * depth * -24}px, ${(pointerY - 0.5) * depth * -14}px, 0)`;
   });
 }
 
@@ -88,7 +100,6 @@ function revealCards() {
 
 window.addEventListener("resize", resizeCanvas);
 window.addEventListener("scroll", () => {
-  updateParallax();
   revealCards();
 }, { passive: true });
 
@@ -97,6 +108,17 @@ window.addEventListener("pointermove", (event) => {
   pointerY = event.clientY / Math.max(height, 1);
   updateParallax();
 }, { passive: true });
+
+reduceMotion.addEventListener("change", () => {
+  if (reduceMotion.matches && animationFrame) {
+    cancelAnimationFrame(animationFrame);
+    animationFrame = null;
+    ctx.clearRect(0, 0, width, height);
+  } else if (!animationFrame) {
+    drawSignals();
+  }
+  updateParallax();
+});
 
 resizeCanvas();
 drawSignals();
