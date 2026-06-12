@@ -1,39 +1,31 @@
-# Parallax Operational Intelligence Engine Page
+# Parallax Predictive Risk Intelligence Engine Page
 
-Standalone customer-facing web section for Parallax Data Lab. The page positions the offering as the intelligence engine behind predictive and directional operational digests, with the linked digest serving as the executive-facing output.
+Standalone customer-facing web section for Parallax Data Lab. The page positions the offering as the predictive risk intelligence engine behind the Operational Risk Digest, with the linked digest serving as the executive-facing output.
 
 ## Purpose
 
-This page explains how operational signals become leadership attention items:
+This page explains how industrial operational signals become leadership attention items:
 
-- Operational signal collection
+- Industrial signal collection
 - Pattern detection engine
 - Predictive risk modeling
 - Intervention prioritization
 - Executive intelligence delivery
 
-The copy is intentionally broader than worker safety so the page can apply across safety, compliance, quality, service, workflow, field operations, and other operational risk contexts.
+The copy is tuned for manufacturing and automotive, construction and infrastructure, aerospace, shipbuilding, energy and utilities, field operations, and other high-stakes operational risk contexts.
 
 ## Files
 
-- `index.html` - Page content, navigation, CTAs, section anchors, and expandable detail sections.
-- `styles.css` - Parallax visual system, responsive layout, cards, bullets, and section styling.
+- `index.html` - Page content, CTAs, section anchors, generated visual assets, custom hero system visual, scoring context, and opened detail sections.
+- `styles.css` - Parallax visual system, grid background layer, responsive layout, cards, bullets, and section styling.
 - `script.js` - Canvas signal background, pointer-based motion, and reveal behavior.
-- `assets/` - Local visual assets used by the page.
+- `assets/` - Local visual assets used by the page, including the updated Parallax logo crop and five generated engine-step images.
 
 ## Key Links
 
 Primary digest CTA:
 
-- `https://jonahnr.github.io/worker-safety-digest/`
-
-Top navigation:
-
-- Home: `https://parallax-data.webflow.io/`
-- How We Help: `https://parallax-data.webflow.io/how-we-help`
-- Intelligence Lab: `https://parallax-data.webflow.io/intelligence-lab`
-- Our Offerings: `https://parallax-data.webflow.io/our-offerings`
-- About: `https://parallax-data.webflow.io/about`
+- `https://jonahnr.github.io/operational-risk-digest/`
 
 ## Local Preview
 
@@ -61,9 +53,20 @@ The five flow cards near the top link directly to:
 
 Each section includes an expandable `What this can look like` breakout to help customers picture the inputs, logic, and outputs in their own operating environment.
 
+## Scoring Context
+
+The page references the threshold logic behind the digest in customer-facing language:
+
+- Risk movement is compared against a trailing six-week baseline.
+- The model layer uses magnitude, velocity, persistence, spread, and severity.
+- Missing signal families should be reweighted rather than treated as zero.
+- Digest items include validation, quality, and confidence context before they are framed as leadership-ready.
+
 ## Design Notes
 
 - Keep the page in the Parallax dark-blue, electric-blue, and gold visual language.
-- Keep customer-facing copy focused on business clarity, operational risk movement, and executive attention.
+- Keep customer-facing copy focused on industrial signal clarity, operational risk movement, and executive attention.
 - Avoid making this read like a separate dashboard product. It should support the digest as the underlying intelligence engine.
-- Use clean bullets and structured lists instead of fake image-icon grids for the input/output examples.
+- Use the generated PNG visuals for the five engine stages, supported by clean bullets and structured lists for input/output examples.
+- Keep the page free of the removed top ribbon and navigation links.
+- Keep the hero visual aligned with the same five-stage image system used in the engine section.
